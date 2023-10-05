@@ -9,7 +9,8 @@
         "project-team": "Project team",
         "koo-yu-cong": "Koo Yu Cong",
         "joshua-wee": "Joshua Wee",
-        "johnny-doe": "Johnny Doe",
+        "song-fang-yi": "Song Fang Yi",
+        "lian-zhi-xuan": "Lian Zhi Xuan",
         "jean-doe": "Jean Doe",
         "james-doe": "James Doe"
       },
@@ -52,12 +53,15 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
+        "proposed-implementation": "Proposed Implementation",
+        "design-considerations": "Design considerations:",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
         "user-stories": "User stories",
         "use-cases": "Use cases",
+        "use-case-search-for-a-person": "Use case: Search for a person",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
@@ -146,6 +150,22 @@
     {
       "src": "team/jweewee.md",
       "title": "Jweewee's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/lianzhixuan.md",
+      "title": "TehOPanas's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/songfangyl.md",
+      "title": "songfangyl's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
