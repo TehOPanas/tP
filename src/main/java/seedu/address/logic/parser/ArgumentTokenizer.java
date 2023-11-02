@@ -1,22 +1,6 @@
 package seedu.address.logic.parser;
 
-//import static java.util.Objects.requireNonNull;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_ADD_INSURANCE_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_ADD_TAG_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_APPOINTMENT_TIME_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_APPOINTMENT_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_APPOINTMENT_VENUE_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_DELETE_INSURANCE_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_DELETE_TAG_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL_UPPER;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EMPTY;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_INSURANCE_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_PRIORITY_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_REMARK_UPPER;
-//import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG_UPPER;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,32 +30,7 @@ public class ArgumentTokenizer {
         return extractArguments(argsString, positions);
     }
 
-    /**
-     * Converts all uppercase {@code Prefix} to lowercase {@code Prefix}
-     *
-     * @param argsString arguments that may contain uppercase prefixes
-     * @return processed arguments containing only lowercase prefixes
-     */
-//    public static String preprocessArgsString(String argsString) {
-//        requireNonNull(argsString);
-//
-//        Prefix[] uppercasePrefixes = new Prefix[] { PREFIX_NAME_UPPER, PREFIX_PHONE_UPPER,
-//            PREFIX_EMAIL_UPPER, PREFIX_PRIORITY_UPPER, PREFIX_TAG_UPPER, PREFIX_REMARK_UPPER,
-//            PREFIX_INSURANCE_UPPER, PREFIX_ADDRESS_UPPER, PREFIX_ADD_INSURANCE_UPPER,
-//            PREFIX_DELETE_INSURANCE_UPPER, PREFIX_ADD_TAG_UPPER, PREFIX_DELETE_TAG_UPPER, PREFIX_APPOINTMENT_UPPER,
-//            PREFIX_APPOINTMENT_TIME_UPPER, PREFIX_APPOINTMENT_VENUE_UPPER};
-//
-//        String processedArgs = argsString;
-//
-//        for (Prefix p : uppercasePrefixes) {
-//            String upperPrefix = p.getPrefix();
-//            String lowerPrefix = upperPrefix.toLowerCase();
-//
-//            processedArgs = processedArgs.replaceAll(" " + upperPrefix, " " + lowerPrefix);
-//        }
-//
-//        return processedArgs;
-//    }
+
 
     /**
      * Finds all zero-based prefix positions in the given arguments string.
