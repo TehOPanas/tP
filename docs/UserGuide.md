@@ -243,7 +243,7 @@ These keywords can be spread across different `tag`/`insurance` entries.
   4. `name`: `n/`
   5. `phone`: `p/`
   6. `priority`: `pr/`
-  7. `reamrk`: `r/`
+  7. `remark`: `r/`
   8. `tag`: `t/`
 * A keyword is **NOT** mandatory.
 
@@ -259,6 +259,8 @@ If there's a customer named `Song Wei` and another customer named `John Song`, a
 they would be included in the search results because their names contain the keyword `Song`, and they also have an insurance attribute.
 
 <box type="info" seamless>
+
+**Note**:
 
 Note that if you search using `find n/Song Song`, </br>
 it will match a customer named `Song Guo Xuan` because all the specified keywords are present in the customer's name.
@@ -401,7 +403,7 @@ After:
 
 ### Adding a remark to a customer: `remark`
 
-Format: `remark <index> <remark>`
+Format: `remark <index> [remark]`
 
 **Description:**
 

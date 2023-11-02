@@ -53,9 +53,9 @@ public class Messages {
         final StringBuilder builder = new StringBuilder();
         builder.append("\nName: ")
                 .append(person.getName())
-                .append(" Phone: ")
+                .append("    |    Phone: ")
                 .append(person.getPhone())
-                .append(" Email: ")
+                .append("    |    Email: ")
                 .append(person.getEmail())
                 .append("\nAddress: ")
                 .append(person.getAddress())
