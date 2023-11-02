@@ -11,6 +11,12 @@ public class Prefix {
 
     private boolean isUsingLongPrefix = false;
 
+    /**
+     * Create a prefix to that defines the field in a command
+     *
+     * @param prefix the shorthand form
+     * @param longPrefix the full word form
+     */
     public Prefix(String prefix, String longPrefix) {
         this.prefix = prefix;
         this.longPrefix = longPrefix;
@@ -19,6 +25,7 @@ public class Prefix {
     public String getPrefix() {
         return prefix;
     }
+
 
     public String getLongPrefix() {
         return longPrefix;
@@ -31,9 +38,17 @@ public class Prefix {
         return isUsingLongPrefix ? longPrefix.length() : prefix.length();
     }
 
+    /**
+     * Indicate that we are currently using short prefix
+     *
+     */
     public void useShortPrefix() {
         isUsingLongPrefix = false;
     }
+    /**
+     * Indicate that we are currently using long prefix
+     *
+     */
     public void useLongPrefix() {
         isUsingLongPrefix = true;
     }
