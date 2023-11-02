@@ -7,19 +7,35 @@ package seedu.address.logic.parser;
 public class Prefix {
     private final String prefix;
 
-    public Prefix(String prefix) {
+    private final String longPrefix;
+
+    private boolean isUsingLongPrefix = false;
+
+    public Prefix(String prefix, String longPrefix) {
         this.prefix = prefix;
+        this.longPrefix = longPrefix;
     }
 
     public String getPrefix() {
         return prefix;
     }
 
+    public String getLongPrefix() {
+        return longPrefix;
+    }
+
     /**
      * Returns the length of the prefix.
      */
     public int getPrefixLength() {
-        return prefix.length();
+        return isUsingLongPrefix ? longPrefix.length() : prefix.length();
+    }
+
+    public void useShortPrefix() {
+        isUsingLongPrefix = false;
+    }
+    public void useLongPrefix() {
+        isUsingLongPrefix = true;
     }
 
     @Override
@@ -44,6 +60,6 @@ public class Prefix {
         }
 
         Prefix otherPrefix = (Prefix) other;
-        return prefix.equals(otherPrefix.prefix);
+        return prefix.equals(otherPrefix.prefix) && longPrefix.equals(otherPrefix.longPrefix);
     }
 }
